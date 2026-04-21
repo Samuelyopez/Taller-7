@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+    
+    <header class="border-b border-gray-800 bg-gray-900/50 sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold gradient-text"><i class="fa-solid fa-code-branch mr-2"></i>Taller 6</h1>
+                <p class="text-sm text-gray-400">Fundamentos de Ingenier&#237;a de Software</p>
+            </div>
+            <div class="bg-brand-dark/30 text-brand-light px-4 py-1 rounded-full text-sm font-semibold border border-brand-dark/50">
+                <i class="fa-solid fa-bolt mr-1"></i> Live Coding Edition
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 mt-10 space-y-8">
+        
+        
+        <section class="text-center space-y-4">
+            <h2 class="text-4xl font-extrabold tracking-tight text-white">Domina los Principios <span class="text-brand">S.O.L.I.D.</span></h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                Bienvenidos al lado oscuro del c&#243;digo espagueti. Hoy vamos a usar IA para crear un monstruo monol&#237;tico y luego, paso a paso, lo vamos a curar usando principios de dise&#241;o, TDD y DDD. &#191;Listos para refactorizar?
+            </p>
+        </section>
+
+        
+        <section class="glass-panel rounded-2xl p-8 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full bg-red-500"></div>
+            <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                <span class="bg-red-500/20 text-red-400 p-2 rounded-lg mr-3"><i class="fa-solid fa-robot"></i></span>
+                Fase 1: La Trampa (Creando el Monstruo)
+            </h3>
+            <p class="mb-4 text-gray-300">
+                Abre tu IDE favorito, crea un <strong>nuevo proyecto en Java</strong> (trabajo individual) y utiliza la herramienta <strong>Antigravity</strong> con el siguiente prompt exacto.
+            </p>
+            <div class="bg-gray-950 rounded-lg p-5 border border-gray-800 relative group">
+                
+                    <i class="fa-regular fa-copy"></i>
+                
+                <code class="font-mono text-brand-light text-sm">
+                    &quot;Calculadora SoLiD. Quiero crear un programa en java que tenga operaciones aritmeticas entre numeros enteros, de tipo binarias (suma, resta, etc) y unarias (raiz cuadrada, logaritmo natural). Es una aplicaci&#243;n de consola. Tip: quiero todo en la misma clase&quot;
+                </code>
+            </div>
+            <div class="mt-6 flex items-start bg-yellow-500/10 border border-yellow-500/20 p-4 rounded-lg">
+                <i class="fa-solid fa-triangle-exclamation text-yellow-500 mt-1 mr-3"></i>
+                <div>
+                    <h4 class="font-semibold text-yellow-500">Acci&#243;n Requerida:</h4>
+                    <p class="text-sm text-gray-300 mt-1">Sube esta clase inicial a tu repositorio personal en GitHub/GitLab, haz tu primer commit (<code class="bg-gray-800 px-1 rounded">feat: codigo inicial espagueti</code>) y env&#237;a el link en la plataforma del curso antes de continuar.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="glass-panel rounded-2xl p-8 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full bg-blue-500"></div>
+            <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                <span class="bg-blue-500/20 text-blue-400 p-2 rounded-lg mr-3"><i class="fa-solid fa-brain"></i></span>
+                Fase 2: Reflexi&#243;n Cr&#237;tica
+            </h3>
+            <p class="mb-6 text-gray-300">
+                Mira el c&#243;digo que acaba de generar la IA. Responde las siguientes preguntas en los comentarios de tu commit o en tu archivo README.md:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-blue-500/50 transition">
+                    <p class="font-mono text-sm text-blue-300">01.</p>
+                    <p class="font-semibold text-gray-200 mt-1">&#191;Qu&#233; responsabilidades tiene exactamente esta clase?</p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-blue-500/50 transition">
+                    <p class="font-mono text-sm text-blue-300">02.</p>
+                    <p class="font-semibold text-gray-200 mt-1">Si cambio la forma de imprimir en consola, &#191;qu&#233; pasa con las operaciones?</p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-blue-500/50 transition">
+                    <p class="font-mono text-sm text-blue-300">03.</p>
+                    <p class="font-semibold text-gray-200 mt-1">Si quiero tener 2 men&#250;s distintos, &#191;qu&#233; deber&#237;a modificar?</p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-blue-500/50 transition">
+                    <p class="font-mono text-sm text-blue-300">04.</p>
+                    <p class="font-semibold text-gray-200 mt-1">&#191;C&#243;mo adiciono operaciones nuevas (ej. Potencia)? &#191;Rompe algo m&#225;s?</p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-blue-500/50 transition md:col-span-2">
+                    <p class="font-mono text-sm text-blue-300">05.</p>
+                    <p class="font-semibold text-gray-200 mt-1">&#191;Qu&#233; pasa si ingreso validaciones de dominio (ej. no dividir por cero, no logaritmos negativos)? &#191;D&#243;nde ir&#237;an en este desastre?</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="glass-panel rounded-2xl p-8 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full bg-brand"></div>
+            <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                <span class="bg-brand-dark/30 text-brand p-2 rounded-lg mr-3"><i class="fa-solid fa-laptop-code"></i></span>
+                Fase 3: Live Refactoring (La senda SOLID)
+            </h3>
+            <p class="mb-4 text-gray-300">
+                A medida que el profesor explique cada letra del principio <strong>S.O.L.I.D.</strong> en clase, tu misi&#243;n ser&#225; refactorizar tu c&#243;digo utilizando prompts iterativos.
+            </p>
+            <ul class="space-y-4 text-gray-300 mb-6">
+                <li class="flex items-start">
+                    <i class="fa-solid fa-folder-plus text-brand mt-1 mr-3"></i>
+                    <span><strong>Regla de oro:</strong> Antes de aplicar un nuevo principio, crea un <strong>nuevo paquete</strong> en tu proyecto (ej. <code>solid.s</code>, <code>solid.o</code>, etc.) y mueve/copia lo nuevo all&#237;.</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa-solid fa-vial-circle-check text-brand mt-1 mr-3"></i>
+                    <span><strong>TDD al rescate:</strong> P&#237;dele a tu IA que primero genere las pruebas unitarias para la funcionalidad refactorizada antes de implementar la clase.</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fa-solid fa-cubes text-brand mt-1 mr-3"></i>
+                    <span><strong>Piensa en DDD:</strong> Extrae reglas de negocio en <em>Value Objects</em> (ej. validar que un n&#250;mero sea positivo para una ra&#237;z cuadrada).</span>
+                </li>
+            </ul>
+
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-gray-800 border border-gray-600 rounded-full text-sm font-mono text-gray-300">S - Single Responsibility</span>
+                <span class="px-3 py-1 bg-gray-800 border border-gray-600 rounded-full text-sm font-mono text-gray-300">O - Open/Closed</span>
+                <span class="px-3 py-1 bg-gray-800 border border-gray-600 rounded-full text-sm font-mono text-gray-300">L - Liskov Substitution</span>
+                <span class="px-3 py-1 bg-gray-800 border border-gray-600 rounded-full text-sm font-mono text-gray-300">I - Interface Segregation</span>
+                <span class="px-3 py-1 bg-gray-800 border border-gray-600 rounded-full text-sm font-mono text-gray-300">D - Dependency Inversion</span>
+            </div>
+        </section>
+
+        
+        <section class="glass-panel rounded-2xl p-8 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full bg-purple-500"></div>
+            <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                <span class="bg-purple-500/20 text-purple-400 p-2 rounded-lg mr-3"><i class="fa-solid fa-box-archive"></i></span>
+                Entregables
+            </h3>
+            <div class="bg-gray-800/30 rounded-lg p-5 border border-purple-500/30">
+                <ul class="list-disc list-inside space-y-2 text-gray-300">
+                    <li>Link a tu repositorio de c&#243;digo (Aseg&#250;rate de que sea accesible).</li>
+                    <li>Un paquete con la <strong>clase inicial monol&#237;tica</strong>.</li>
+                    <li>Un paquete con la <strong>versi&#243;n final refactorizada</strong> aplicando todos los principios S.O.L.I.D.</li>
+                    <li>Evidencia de uso de <strong>TDD</strong> (clases de test unitarios presentes).</li>
+                    <li>Evidencia de <strong>DDD</strong> (separaci&#243;n de capa de dominio y validaciones).</li>
+                    <li class="text-brand-light font-semibold"><strong>Material adicional:</strong> Un documento (Markdown o PDF) con el resumen de tu interacci&#243;n con <strong>Antigravity</strong> (prompts utilizados, errores que corrigi&#243; la IA, y c&#243;mo la guiaste paso a paso).</li>
+                    <li><em>Nota: La calculadora corre en consola y no requiere persistencia de datos (bases de datos).</em></li>
+                </ul>
+            </div>
+        </section>
+
+        
+        <section class="glass-panel rounded-2xl p-8">
+            <h3 class="text-2xl font-bold text-white mb-6 text-center"><i class="fa-solid fa-list-check text-brand mr-2"></i> R&#250;brica de Evaluaci&#243;n</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-gray-700 bg-gray-800/50 text-gray-300">
+                            <th class="p-4 font-semibold">Criterio</th>
+                            <th class="p-4 font-semibold text-red-400">Novato (0.0 - 2.5)</th>
+                            <th class="p-4 font-semibold text-yellow-400">Competente (2.6 - 4.0)</th>
+                            <th class="p-4 font-semibold text-brand">Maestro Jedi (4.1 - 5.0)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm text-gray-300">
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/20 transition">
+                            <td class="p-4 font-medium text-white">Reflexi&#243;n Inicial</td>
+                            <td class="p-4">No responde las preguntas o las respuestas son muy superficiales.</td>
+                            <td class="p-4">Responde la mayor&#237;a de las preguntas pero le falta profundidad en el an&#225;lisis de responsabilidades.</td>
+                            <td class="p-4">An&#225;lisis cr&#237;tico profundo. Identifica claramente los antipatrones y el impacto del acoplamiento.</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/20 transition">
+                            <td class="p-4 font-medium text-white">Aplicaci&#243;n S.O.L.I.D.</td>
+                            <td class="p-4">El c&#243;digo final sigue estando altamente acoplado. Omite m&#225;s de 3 principios.</td>
+                            <td class="p-4">Aplica correctamente SRP y OCP, pero presenta fallas leves en Liskov, ISP o inyecci&#243;n de dependencias.</td>
+                            <td class="p-4">Arquitectura impecable. Uso de interfaces correcto, inyecci&#243;n de dependencias y c&#243;digo f&#225;cilmente extensible.</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/20 transition">
+                            <td class="p-4 font-medium text-white">TDD y Testing</td>
+                            <td class="p-4">No hay pruebas unitarias o no compilan.</td>
+                            <td class="p-4">Existen pruebas b&#225;sicas de caminos felices, pero no fueron construidas iterativamente ni cubren errores.</td>
+                            <td class="p-4">Excelente cobertura. Evidencia de dise&#241;o guiado por pruebas. Cubre casos borde (ej. divisi&#243;n por cero).</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/20 transition">
+                            <td class="p-4 font-medium text-white">Principios DDD</td>
+                            <td class="p-4">Toda la l&#243;gica de validaci&#243;n est&#225; en la consola o m&#233;todos gen&#233;ricos.</td>
+                            <td class="p-4">Intenta separar el dominio pero hay fugas de l&#243;gica de negocio hacia la interfaz de usuario.</td>
+                            <td class="p-4">Aislamiento total del dominio. Uso de Value Objects / entidades para validar las reglas de negocio aritm&#233;ticas.</td>
+                        </tr>
+                        <tr class="border-b border-gray-800 hover:bg-gray-800/20 transition">
+                            <td class="p-4 font-medium text-white">Interacci&#243;n IA (Antigravity)</td>
+                            <td class="p-4">No adjunta el resumen o muestra un uso pasivo (solo copi&#243; y peg&#243; un prompt sin guiar a la herramienta).</td>
+                            <td class="p-4">Adjunta el resumen con prompts, pero hay poca evidencia de c&#243;mo us&#243; la IA para refactorizar iterativamente.</td>
+                            <td class="p-4">Documenta un &quot;Pair Programming&quot; real con la IA. Muestra prompts claros, iterativos y correctivos enfocados en S.O.L.I.D.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        
+        <footer class="text-center text-gray-500 text-sm mt-10">
+            <p>Dise&#241;ado para el curso de Fundamentos de Ingenier&#237;a de Software.</p>
+        </footer>
+
+    </main>
+
+    
+
+<script type="module" src="https://s.brightspace.com/lib/bsi/2026.4.226/unbundled/mathjax.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					if (document.querySelector('math, .d2l-element, .d2l-cplus-layout') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+						document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+							elm.setAttribute('style', 'display: block; height: 0.5rem;');
+						});
+
+						document.querySelectorAll('math mmultiscripts > none').forEach(elm => {
+							const mrow = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'mrow');
+							elm.replaceWith(mrow);
+						});
+
+						window.D2L.MathJax.loadMathJax({
+							outputScale: 1.5,
+							renderLatex: false,
+							enableMML3Support: false
+						});
+					}
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2026.4.226/unbundled/prism.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code, true);
+					});
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2026.4.226/unbundled/embeds.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					window.D2L.EmbedRenderer.renderEmbeds(document.body);
+				});</script></body></html>
